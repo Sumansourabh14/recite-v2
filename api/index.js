@@ -17,6 +17,9 @@ app.use(express.json());
 app.use(cors({ origin: "*" }));
 
 app.use(apiRequestLimiter);
+app.get("/", (req, res) => {
+  res.json({ success: true, message: "Recite - Quotes API is running..." });
+});
 app.use("/api/v1", quoteRoute);
 
 app.use(notFound);
