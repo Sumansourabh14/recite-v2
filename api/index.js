@@ -22,9 +22,4 @@ app.use("/api/v1", quoteRoute);
 app.use(notFound);
 app.use(errorHandler);
 
-const port = process.env.PORT;
-
-// app.listen(port, () => {
-//   console.log(`listening on http://localhost:${port} `);
-// });
 module.exports = app;

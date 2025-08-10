@@ -5,11 +5,10 @@ const {
   getRandomQuoteFromDb,
   searchQuotes,
 } = require("../controllers/quoteController");
-const { path } = require("path");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "index.html"));
+  res.json({ success: true, message: "Recite - Quotes API is running..." });
 });
 
 router.get("/quotes", getQuotesFromDb);
