@@ -1,11 +1,11 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const quoteRoute = require("./routes/QuoteRoute");
+const quoteRoute = require("../routes/QuoteRoute");
 const cors = require("cors");
-const connectDb = require("./utils/connectDb");
-const errorHandler = require("./middlewares/errorHandler");
-const notFound = require("./middlewares/notFound");
-const apiRequestLimiter = require("./middlewares/rateLimit");
+const connectDb = require("../utils/connectDb");
+const errorHandler = require("../middlewares/errorHandler");
+const notFound = require("../middlewares/notFound");
+const apiRequestLimiter = require("../middlewares/rateLimit");
 
 const app = express();
 dotenv.config();
