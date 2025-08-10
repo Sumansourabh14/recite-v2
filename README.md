@@ -57,7 +57,7 @@ GET /random
 ```
 
 Returns a single random quote.
-[Try in your browser]([https://recite-flax.vercel.app/api/v1/random)
+[Try in your browser]([https://recite-flax.vercel.app/api/v1/random])
 
 ### Response
 
