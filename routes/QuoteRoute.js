@@ -5,10 +5,11 @@ const {
   getRandomQuoteFromDb,
   searchQuotes,
 } = require("../controllers/quoteController");
+const { path } = require("path");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.sendFile("index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "..", "index.html"));
 });
 
 router.get("/quotes", getQuotesFromDb);
